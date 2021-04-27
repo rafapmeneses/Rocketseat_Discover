@@ -1,0 +1,2 @@
+node --> no terminal --> escrever javascript em um ambiente node, direto no terminal
+node -v --> versao

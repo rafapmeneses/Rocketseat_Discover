@@ -1,0 +1,10 @@
+@import 'https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap'; /*google fonts*/
+
+h1{
+    color:brown;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+strong{
+    color:rebeccapurple;
+}

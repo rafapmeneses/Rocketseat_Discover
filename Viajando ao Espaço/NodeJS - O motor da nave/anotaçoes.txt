@@ -1,0 +1,2 @@
+nodejs.org
+node console.js --> executar arquivo js --> no mesmo diretorio 

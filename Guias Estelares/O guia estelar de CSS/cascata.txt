@@ -1,0 +1,70 @@
+-> A cascata(cascading):
+
+a escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento.
+
+seu estilo é lido de cima para baixo.
+
+é levado em consideração 3 fatores:
+
+1. oridem do estilo
+2. especificidade
+3. importancia
+
+-> Origem do estilo:
+
+inline > tag style > tag link
+
+-> Especificidade:
+
+é o calculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados.
+
+0. Universal selector, combinators e negation pseudo-class (:not())
+1. Element type selector e pseudo-elements (::before, ::after)
+10. Classes e attribute selectors ([type="radio])
+100. ID selector
+1000. inline
+
+-> Regra important:
+
+-cuidado, evite o uso
+-nao é considerado uma boa pratica
+-quebra o fluxo natural da cascata
+
+
+---html---
+
+<style>
+    h1{
+        color: gray;
+    }
+</style>
+
+<h1 class="tittle" id="my-tittle" style="color: green">titulo <strong>Teste</strong></h1>
+<p>teste</p>
+
+---html---
+
+---css---
+
+#my-tittle
+#my-tittle strong{
+    color: gray;
+}
+
+.tittle {
+    color: red;
+}
+
+h1.tittle#my-tittle{
+    color:red;
+}
+
+h1{
+    color:blue !important;
+}
+
+* {
+    color: green;
+}
+
+---css---

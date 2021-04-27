@@ -1,0 +1,27 @@
+AT-rules: @
+
+-esta relacionado ao compartamento do CSS
+-começa com o sinal '@' seguido do identificador e valor
+
+Exemplos comuns
+
+- @import /* incluir um CSS externo */
+- @media /*regras condicionais para dispositivos*/
+- @font-face /*fontes externas*/
+- @keyframes /*animation*/
+
+---CSS---
+@import url("http://local.com/styles.css");
+
+@media (min-width: 500px){ /*parecido com if*/
+    /*regras aq*/
+}
+
+@font-face {
+    /*regras aq*/
+
+    @keyframes nameofanimation {
+        /*regras aq*/
+    }
+}
+---CSS---

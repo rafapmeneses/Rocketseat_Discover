@@ -1,0 +1,6 @@
+caixas:
+
+"quase tudo sao caixas do css"
+posicionamentos, tamanhos, espaçamentos, bordas, cores
+caixa pode ficar ao lado de outra, acima...
+elementos html sao caixas

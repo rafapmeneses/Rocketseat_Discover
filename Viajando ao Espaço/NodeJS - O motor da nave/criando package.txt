@@ -1,0 +1,65 @@
+npm init //primeira maneira de criar
+-name: qualquer-nome
+-version: "enter" (1.0)
+-description: aprendendo node
+-entry point: "enter" (index.js)
+-test command: "enter"
+-git repository: "enter"
+-keywords: "enter"
+-author: "enter"
+-license: "enter"
+-is this ok? "enter" (yes)
+
+npm init -y //segunda maneira de criar (yes para tudo)
+-edita dentro do arquivo as perguntas
+
+npm install // instalar as dependencias do package.json
+
+npm install cfonts // instalar modulos, cfonts nome do pacote
+npm i cfonts // outra maneira
+npm i cfonts -D // instalar como dependencia de desenvolvimento
+npm i cfonts inquirer opn // instalar mais de uma dependencia ao mesmo tempo
+npm update // atualizar depois de alterar diretamente no arquivo
+
+npm i opn -g // instalar dependencias de maneira global (salva para toda maquina)
+npm uninstall opn -g // desinstalar de maneira global
+npm root -g // diretório da pasta de dependencias globais
+//C:\Users\Fakeb\AppData\Roaming\npm\node_modules
+
+package-lock.json // serve para mapear as dependencias
+
+//scripts
+
+npm run test // rodar o script test
+
+  "scripts": {
+    "start": "node index.js",
+    "dev": node index.js"
+  },
+
+npm run start // rodar o index.js
+npm start // outra maneira de rodar o "start", só funciona com start
+npm run dev // 
+
+//versoes de dependencias
+npm i moment
+
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+
+
+2.29.1
+major.minor.patch
+
+^ // atualizar minor e patch
+~ // atualizar patch
+* // atualizar todas versões
+nada // manter versão fixa
+
+npm i moment@1.5.1 // instalar versão expecifica ou mudar
+npm outdated // mostrar os pacotes desatualizados
+npm upgrade // atualizar todos (não muda no package.json, mas no package-lock sim)
+npm i moment@latest // pegar a ultima versao
+
+npm uninstall moment // desinstalar o pacote
